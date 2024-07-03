@@ -1,18 +1,14 @@
-
 <!DOCTYPE html>
 <html>
 
   <head>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.29.1.min.js"></script>
+    <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.29.1.min.js"></script> 
   </head>
-
   <body>
-    
-  
     <h1>Simple Dashboard</h1>
-    <p>Here fancy plots can be shared on-line. </p>
+    <p>Here fancy plots can be shared online. </p>
 
     <div>
       <h2> Ex.1: Moving dots</h2>
@@ -27,12 +23,20 @@
     <div>
       <h2> Ex.2: Plotly dots</h2>
       <p> Here we will see</p>
-      <p id='pepe'> the circles frozen in time</p>
-      <p id='pepe'> with plotly. </p>
+      <p id='pepe2'> the circles frozen in time</p>
+      <p id='pepe2'> with plotly. </p>
     </div>
 
-    <div id="dots_plot"></div>
+    <div id="d_plot"></div>
+    <div>
+    <h2> Ex.3: The same in plotly express. </h2>
+    <p>Plotly express magic.</p>
+    </div>
+    <div id="d_px"></div>
+    <div id="choropleth_px"></div>
+    <div id="box_px"></div>
 
-     <script src="js/myScript.js"></script>
+    <script src="js/myScript.js"></script>
+
  </body>
 </html>

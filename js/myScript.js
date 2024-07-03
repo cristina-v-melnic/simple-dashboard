@@ -34,13 +34,37 @@ d3.autoType).then(function(data){
         .transition().duration(500).attr("r", 10);
     }
 
-    })
+    });
 
 d3.text("plotly_plots/dots_div.html")
     .then(function(divText){
-        $('#dots_plot').html(divText);
+        $("#d_plot").html(divText);
     })
     .catch(function(error){
-        $('#dots_plot').html("<p style='color:red;'>The plot cannot be found.</p>");
+        $("#d_plot").html("<p style='color:red;'>The plot cannot be found.</p>");
+    });
+
+    
+d3.text("plotly_plots/dots_px.html").then(function(t){
+        $('#d_px').html(t);
     })
+    .catch(function(error){
+        $('#d_px').html("<p style='color:red;'>The plot cannot be found.</p>");
+    });
+    
+d3.text("plotly_plots/choropleth_px.html").then(function(divText){
+        $('#choropleth_px').html(divText);
+    })
+    .catch(function(error){
+        $('#choropleth_px').html("<p style='color:red;'>The plot cannot be found.</p>");
+    });
+
+d3.text("plotly_plots/box_px.html")
+    .then(function(divText){
+        $('#box_px').html(divText);
+    })
+    .catch(function(error){
+        $('#box_px').html("<p style='color:red;'>The plot cannot be found.</p>");
+    });
+    
     
