@@ -35,4 +35,12 @@ d3.autoType).then(function(data){
     }
 
     })
+
+d3.text("plotly_plots/dots_div.html")
+    .then(function(divText){
+        $('#dots_plot').html(divText);
+    })
+    .catch(function(error){
+        $('#dots_plot').html("<p style='color:red;'>The plot cannot be found.</p>");
+    })
     
